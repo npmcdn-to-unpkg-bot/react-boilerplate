@@ -1,5 +1,5 @@
 {
-  "name": "React Boilerplate",
+  "name": "MMS-React-Boilerplate",
   "version": "1.0.0",
   "description": "A boilerplate project for building a single page react page, using gulp to build",
   "main": "app.js",

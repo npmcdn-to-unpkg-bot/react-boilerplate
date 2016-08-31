@@ -2,3 +2,4 @@ node_modules/
 config.codekit
 scripts/
 styles/
+.DS_Store
