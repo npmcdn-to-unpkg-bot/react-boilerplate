@@ -1,0 +1,67 @@
+#Chapter {
+  z-index: 500;
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .chapterpart {
+    position: relative;
+    padding: 20px;
+
+    p {
+      position: relative;
+      line-height: 24px;
+    }
+
+    td {
+
+      &.question {
+            width: 26%;
+            font-weight: 900;
+          }
+      &.proj{
+        font-weight: 900;
+        width: 34%;
+      }
+      &.under {
+        background-color: #ECF9FF;
+      }
+
+      @include breakpoint(lg) {
+        font-size: 1.4em;
+      }
+      @include breakpoint(sm) {
+        font-size: 1.4em;
+      }
+    }
+
+    .dl-horizontal {
+      dt {
+        text-align: left;
+      }
+    }
+
+    li {
+
+      &.box {
+        list-style-image: url('images/assets/unticked.png');
+      }
+      &.tick {
+        list-style-image: url('images/assets/ticked.png');
+      }
+      @include breakpoint(lg) {
+        font-size: 1.4em;
+      }
+      @include breakpoint(sm) {
+        font-size: 1.4em;
+      }
+    }
+
+    #hvar {
+      text-decoration: none;
+      color: black;
+      cursor: default;
+    }
+  }
+}
+

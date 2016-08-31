@@ -1,0 +1,38 @@
+#Menu {
+  	z-index: 1000;
+  	padding: 2em;
+  	background-color: rgba(0,0,0,0.5);
+}
+
+#Menu-tile-container {
+  	.Menu-tiles {
+  		cursor: pointer;
+  		&:hover{
+  			opacity: 0.8;
+  		}
+
+  		.tile-img {
+		  	width: 100%;
+		  	padding: 1em;
+		  	margin: 0 auto;
+		}
+		.tile-title {
+		  	color: #dadada;
+		  	height: 2em;
+		  	text-shadow: 1px 1px #000;
+		  	@include breakpoint(lg) {
+
+			}
+			@include breakpoint(md) {
+
+			}
+			@include breakpoint(sm) {
+
+			}
+			@include breakpoint(xs) {
+
+			}
+		}
+	}
+}
+

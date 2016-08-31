@@ -1,0 +1,17 @@
+.no-space {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.main-header-img {
+  width: 60%;
+  margin: 0 auto;
+}
+.img-footer {
+  margin: 2em auto;
+}
+.header-img{
+  width: 100%;
+}
+.shadow {
+	@include box-shadow(4px, 4px, 16px, -4px, $shaded);
+}
