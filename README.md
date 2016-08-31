@@ -41,7 +41,7 @@ module.exports = {
 Það þarf að hafa það í huga að setja þá componenta sem eru notaðir innann annarra componenta inn ofar í röðinni.
 
 ### SCSS skrár
-Þeir eiga heima í [assets/js/sass](assets/js/sass) og þar í sínum undirmöppum. Í [base/](assets/js/sass/base) á grunnurinn heima, þ.e.a.s. alls konar breytur og slíkt sem er gagnlegt. Í [components/](assets/js/sass/components) möppunna fara svo SCSS skrárnar fyrir þá componenta sem maður vill stíla.
+Þeir eiga heima í [assets/sass](assets/sass) og þar í sínum undirmöppum. Í [base/](assets/sass/base) á grunnurinn heima, þ.e.a.s. alls konar breytur og slíkt sem er gagnlegt. Í [components/](assets/sass/components) möppunna fara svo SCSS skrárnar fyrir þá componenta sem maður vill stíla.
 Þegar maður bætir við nýrri SCSS skrá þar svo að importa henni í [main.scss](assets/sass/main.scss), t.d. svona:
 ```
 @import 'components/nonsense'
