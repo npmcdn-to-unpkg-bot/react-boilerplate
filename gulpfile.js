@@ -10,7 +10,7 @@ var plumber      = require('gulp-plumber');
 var reload       = browserSync.reload;
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
-var jsFiles      = require('./js/src/jsFiles')
+var jsFiles      = require('./assets/js/src/jsFiles')
 
 
 var onError = function(err) {
