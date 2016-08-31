@@ -1,27 +1,4 @@
-.outer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  overflow-y: scroll;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-}
-mark {
-  color: #fff !important;
-  background: #cc2229 !important;
-  border-radius: 2em;
-}
-a {
-  position: relative;
-  text-decoration: none;
-}
-html {
-  overflow-y: scroll;
-}
+/* Stylings for basic elements */
+body {
 
-li {
-  line-height: 30px;
 }

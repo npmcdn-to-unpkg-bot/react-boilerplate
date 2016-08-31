@@ -10,19 +10,8 @@ var plumber      = require('gulp-plumber');
 var reload       = browserSync.reload;
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
+var jsFiles      = require('./js/src/jsFiles')
 
-
-var jsFiles = {
-  vendor: [
-
-  ],
-  // Add React components here.
-  // Add the components used within the others first
-  source: [
-    'assets/js/src/components/Nonsense.jsx',
-    'assets/js/src/components/Container.jsx',
-  ]
-};
 
 var onError = function(err) {
   notify.onError({
@@ -40,7 +29,7 @@ var plumberOptions = {
 
 // Lint JS/JSX files
 gulp.task('eslint', function() {
-  return gulp.src(jsFiles.source)
+  return gulp.src(jsFiles.react)
     .pipe(eslint({
       baseConfig: {
         "ecmaFeatures": {
@@ -53,10 +42,10 @@ gulp.task('eslint', function() {
     .pipe(eslint.failAfterError());
 });
 
-// Concatenate jsFiles.vendor and jsFiles.source into one JS file.
+// Concatenate jsFiles.vendor and jsFiles.react into one JS file.
 // Run copy-react and eslint before concatenating
 gulp.task('concat',  function() {
-  return gulp.src(jsFiles.source)
+  return gulp.src(jsFiles.react)
     .pipe(sourcemaps.init())
     .pipe(babel({
       only: [
@@ -67,7 +56,7 @@ gulp.task('concat',  function() {
     }))
     .pipe(concat('app.js'))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('assets/js'));
+    .pipe(gulp.dest('scripts'));
 });
 
 // Compile Sass to CSS
@@ -94,7 +83,7 @@ gulp.task('sass', function() {
     .pipe(sass(sassOptions))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('styles'))
     .pipe(filter(filterOptions))
     .pipe(reload(reloadOptions));
 });

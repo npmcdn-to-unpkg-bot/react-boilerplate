@@ -1,9 +1,10 @@
+/* This file basically just handles the importing of the scss files */
+
+/* Base imports */
 @import 'base/mixins';
 @import 'base/variables';
 @import 'base/base-elements';
 @import 'base/shared';
 
-
-@import 'components/tabs';
-@import 'components/menu';
-@import 'components/chapter';
+/* Import your components here */
+@import 'components/nonsense';
