@@ -1,3 +1,4 @@
+
 // Here is where it all comes together, the main container
 var Container = React.createClass({
     displayName: 'Container',
@@ -12,6 +13,6 @@ var Container = React.createClass({
 });
 
 ReactDOM.render(
-    <Container data={data} />,
+    <Container />,
     document.getElementById('Target')
 );
